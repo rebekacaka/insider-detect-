@@ -34,3 +34,6 @@ Data Source-> Ingestion Layer -> Raw Storage (S3) -> Transformation Layer -> Ana
 
 ## Market Coverage
 
+This system covers 4 major global markets and 2 smaller overlooked markets. For every market, there are different regulators, different filing system and different data source. The UK market is regulated and supervised by the FCA, USA by SEC EDGAR using its API for filings. Germany is monitored and regulated by BaFin, Japan bt FSA and smaller markets like Albania and Eastern Europe are left with no automated oversight which is exactly why the system targets them. 
+The key engineering challenge is that each market has a different data format, different filing deadlines and different APIs. THe ingestion layer handles each market with its own adapter, but the whole system will feed into the same unified pipeline. 
+
