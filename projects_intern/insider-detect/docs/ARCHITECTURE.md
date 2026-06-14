@@ -20,3 +20,7 @@ Database — PostgreSQL stores everything in structured tables — raw trades, f
 API — FastAPI serves the processed data to the dashboard through clean endpoints.
 Dashboard — A live webpage built with Django and Chart.js that displays flagged trades, suspicion scores, and volume charts.
 Infrastructure — Docker keeps every component isolated and running consistently. GitHub Actions runs tests automatically on every code change.
+
+## DATA FLOW 
+
+Data Source-> Ingestion Layer -> Raw Storage (S3) -> Transformation Layer -> Analystic Layer -> Database -> API-> Dashboard 
