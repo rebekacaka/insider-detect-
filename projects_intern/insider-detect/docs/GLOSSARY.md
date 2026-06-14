@@ -8,5 +8,9 @@
 
 ## Regulatory Framework
 
-A FOrm 4 is a document that insiders (CEOs, board members, and major shareholders) are legally required to file with the SEC withing 2 days of bying or selling shares in their own company. This provides SEC with the information about who traded, which comapny, how many shares and at what price and whether they bought or sold and the specific date. 
+A Form 4 is a document that insiders (CEOs, board members, and major shareholders) are legally required to file with the SEC withing 2 days of bying or selling shares in their own company. This provides SEC with the information about who traded, which comapny, how many shares and at what price and whether they bought or sold and the specific date. 
+
+## Core Detection Signals for Insider Trading
+First, normal volume is how many shares a stock trades on a typical day.BIg companies normally have a consister trading number of shares. A volume spike is when that number suddenly jumps way above normal. So something way above the consistent number.   
+If someone who has insider information knows the company will announce smth huge- record profits etc- they will buy as many shares as possible before the announcment. That buing creates a volume spike. The announcement happens, the price jumps, they sell and make a fortune.The timing window is the key. We look at the 7, 14, and 30 days before any major announcement. If volume spiked during that window with no public explanation, that's a red flag.
 
