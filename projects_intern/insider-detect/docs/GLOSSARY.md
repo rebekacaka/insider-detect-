@@ -14,3 +14,6 @@ A Form 4 is a document that insiders (CEOs, board members, and major shareholder
 First, normal volume is how many shares a stock trades on a typical day.BIg companies normally have a consister trading number of shares. A volume spike is when that number suddenly jumps way above normal. So something way above the consistent number.   
 If someone who has insider information knows the company will announce smth huge- record profits etc- they will buy as many shares as possible before the announcment. That buing creates a volume spike. The announcement happens, the price jumps, they sell and make a fortune.The timing window is the key. We look at the 7, 14, and 30 days before any major announcement. If volume spiked during that window with no public explanation, that's a red flag.
 
+## Standard Deviation
+
+A Z-score shows how abnormal something is compared to its history. A statistical measure used to quantify how many standard deviations a stock's sudden trading volume spike is from its historical daily average, where a threshold of 2.5 or higher indicates a mathematically rare anomaly that triggers an automated flag for potential insider trading.
