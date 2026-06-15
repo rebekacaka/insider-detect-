@@ -36,3 +36,7 @@ Data Source-> Ingestion Layer -> Raw Storage (S3) -> Transformation Layer -> Ana
 
 This system covers 4 major global markets and 2 smaller overlooked markets. For every market, there are different regulators, different filing system and different data source. The UK market is regulated and supervised by the FCA, USA by SEC EDGAR using its API for filings. Germany is monitored and regulated by BaFin, Japan bt FSA and smaller markets like Albania and Eastern Europe are left with no automated oversight which is exactly why the system targets them. 
 The key engineering challenge is that each market has a different data format, different filing deadlines and different APIs. THe ingestion layer handles each market with its own adapter, but the whole system will feed into the same unified pipeline. 
+
+Web scraping strategy for Eastern European and Ballkan markets 
+
+For markets with no official API Albania, Serbia, Romania, Bosnia the system uses web scraping instead. BeautifulSoup and requests visit the exchange websites on a schedule, extract trade data directly from the HTML tables, and feed it into the same ingestion pipeline as the official API sources. This means the rest of the system treats all data the same way regardless of where it came from. Web scraping covers the exact markets that regulators ignore,making this the only system that monitors both major and overlooked markets in a single unified pipeline.
