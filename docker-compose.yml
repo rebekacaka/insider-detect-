@@ -1,0 +1,16 @@
+services: 
+  postgres: 
+    image: postgres:16-alpine 
+    environment:
+      POSTGRES_DB: insider_detect
+      POSTGRES_USER: rebeka 
+      POSTGRES_PASSWORD: rebeka123
+    ports: 
+      - "5432:5432"
+    volumes: 
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+volumes:
+  postgres_data:
+
