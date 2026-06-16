@@ -23,6 +23,10 @@ CREATE TABLE insider_filings (
     filing_date DATE NOT NULL, 
     days_to_file INTEGER,
     created_at TIMESTAMPTZ NOT NULL,
+    trade_value_usd FLOAT, 
+    position_increase_pct FLOAT, 
+    sector VARCHAR(100), 
+    filing_time TIMESTAMPTZ, 
     UNIQUE(ticker, insider_name, trade_date)
 
 );
