@@ -14,8 +14,8 @@ multiple times without creating duplicate rows.
 from datetime import datetime
 from typing import List
 from psycopg2.extras import execute_values
-from ingestion.base_adapter import MarketRecord
-from database.database_connection import get_connection
+from src.common.base_adapter import MarketRecord
+from src.common.database_connection import get_connection
 
 
 def load_market_records(records: List[MarketRecord]) -> int:

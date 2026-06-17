@@ -24,7 +24,7 @@ import pandas as pd
 from datetime import date
 from typing import List
 import yfinance as yf
-from ingestion.base_adapter import BaseAdapter, MarketRecord
+from src.common.base_adapter import BaseAdapter, MarketRecord
 
 
 class YFinanceAdapter(BaseAdapter):
